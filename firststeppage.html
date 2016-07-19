@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel ="stylesheet" href ="cube.css">
+  <link rel ="stylesheet" href ="signup.css">
+  <link rel ="stylesheet" href ="submit.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+	function myFunction() {
+		var x = document.getElementById("mySelect").selectedIndex;
+		var y = document.getElementsByTagName("option")[x].value
+		if (y == "Journalism") { 
+			
+			window.location.replace("searchresultsjourn.html");
+			return false;
+		}
+		if (y == "Computer Science") { 
+			
+			window.location.replace("searchresultsengineeringcs.html");
+			return false;
+		}
+		if (y == "Computer Science") { 
+			
+			window.location.replace("searchresultsengineeringcs.html");
+			return false;
+		}
+		if (y == "Film") { 
+			
+			window.location.replace("searchresultfilm.html");
+			return false;
+		}
+			
+		
+	}
+	</script>
+  <style>
+.button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button {border-radius: 8px;} 
+.button {font-size: 12px;}
+
+</style>
+ </head>
+<body>
+<script src="searchresults..js">
+</script>
+<script type="text/javascript" src="signin.js" ></script><div class="logmod">
+  <div class="logmod__wrapper">
+    <div class="logmod__container">
+	<ul class="logmod__tabs">
+        <li data-tabtar="lgm-2"><a href="#"><img src="LogoMakr.png" alt="yoPro logo" style="width:100px;height:25px;"></a></li>
+      </ul>
+      <div class="logmod__tab lgm-2">
+        <div class="logmod__heading">
+          <span class="logmod__heading-subtitle"><strong>Search Your Internship Now</strong></span>
+        </div> 
+        <div class="logmod__form">
+          <form accept-charset="utf-8" action="action_page.php" class="simform">
+            <div class="sminputs">
+              <div class="input full">
+				Field of Interest:
+					<select id="mySelect">
+					  <option value="Computer Science">Computer Science</option>
+					  <option value="Film">Film</option>
+					  <option value="Journalism">Journalism</option>
+					  <option value="Engineering">Engineering</option>
+					</select></br></br>
+				<hr/>
+				City:    <select name="City">
+					<option value="Atlanta">Atlanta</option>
+					<option value="Lilburn">Lilburn</option>
+			    </select></br></br>
+				<hr/>
+				Grade:   <select name="Grade">
+					<option value="9">9th</option>
+					<option value="10">10th</option>
+					<option value="11">11th</option>
+					<option value="12">12th</option>
+				 </select></br></br>
+              </div>
+            </div>
+			</br></br></br></br></br></br><center><button class="button" type="button" onclick=" return myFunction()">Search</button></center></br>
+			     </div> 
+				
+          </form>
+        </div> 
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
